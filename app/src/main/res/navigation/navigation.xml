@@ -34,12 +34,10 @@
         android:id="@+id/winFragment"
         android:name="com.example.calculationtest.WinFragment"
         android:label="@string/fragment_win"
-        tools:layout="@layout/fragment_win">
-    </fragment>
+        tools:layout="@layout/fragment_win" />
     <fragment
         android:id="@+id/loseFragment"
         android:name="com.example.calculationtest.LoseFragment"
         android:label="@string/fragment_lose"
-        tools:layout="@layout/fragment_lose">
-    </fragment>
+        tools:layout="@layout/fragment_lose" />
 </navigation>

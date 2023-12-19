@@ -16,8 +16,10 @@ import kotlinx.coroutines.runBlocking
 
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore("SAVE_SHP_DATA_NAME")
 
-class MyViewModel(application: Application, private val savedStateHandle: SavedStateHandle) :
-    AndroidViewModel(application) {
+class MyViewModel(
+    application: Application,
+    savedStateHandle: SavedStateHandle
+) : AndroidViewModel(application) {
     private val _highScore: MutableLiveData<Int> by lazy { savedStateHandle.getLiveData("KEY_HIGH_SCORE") }
     val highScore: LiveData<Int> get() = _highScore
     private val _leftNumber: MutableLiveData<Int> by lazy { savedStateHandle.getLiveData("KEY_LEFT_NUMBER") }

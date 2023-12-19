@@ -15,15 +15,14 @@
         android:layout_height="match_parent"
         tools:context=".QuestionFragment">
 
-        <!-- TODO: Update blank fragment layout -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{@string/current_score(myViewModel.currentScore)}"
-            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/guideline7"
             tools:text="Score:20" />
 
         <TextView
@@ -31,10 +30,10 @@
             android:layout_height="wrap_content"
             android:text="@{@string/question_formula(myViewModel.leftNumber,myViewModel.operator,myViewModel.rightNumber)}"
             android:textSize="@dimen/huge_font"
-            app:layout_constraintBottom_toTopOf="@+id/guideline10"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"
             tools:text="14 - 7 = ?" />
 
         <TextView
@@ -42,10 +41,10 @@
             android:layout_height="wrap_content"
             android:text="@{myViewModel.inputText}"
             android:textSize="@dimen/mid_font"
-            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintBottom_toTopOf="@+id/guideline10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline9"
             tools:text="@string/input_indicator" />
 
         <Button
@@ -55,11 +54,11 @@
             android:layout_height="wrap_content"
             android:text="@string/button1"
             android:textSize="@dimen/button_font"
-            app:layout_constraintBottom_toTopOf="@+id/guideline12"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
             app:layout_constraintEnd_toStartOf="@+id/button2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline11" />
+            app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
         <Button
             android:id="@+id/button2"
@@ -94,11 +93,11 @@
             android:layout_height="wrap_content"
             android:text="@string/button4"
             android:textSize="@dimen/button_font"
-            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintBottom_toTopOf="@+id/guideline12"
             app:layout_constraintEnd_toStartOf="@+id/button5"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+            app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
         <Button
             android:id="@+id/button5"
@@ -133,11 +132,11 @@
             android:layout_height="wrap_content"
             android:text="@string/button7"
             android:textSize="@dimen/button_font"
-            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
             app:layout_constraintEnd_toStartOf="@+id/button8"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline13" />
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
 
         <Button
             android:id="@+id/button8"
@@ -173,11 +172,11 @@
             android:onClick="@{()->myViewModel.inputText(@string/input_indicator)}"
             android:text="@string/buttonClear"
             android:textSize="@dimen/button_font"
-            app:layout_constraintBottom_toTopOf="@+id/guideline15"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
             app:layout_constraintEnd_toStartOf="@+id/button0"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline14" />
+            app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
         <Button
             android:id="@+id/button0"
@@ -206,60 +205,59 @@
             app:layout_constraintTop_toTopOf="@+id/button0" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline8"
+            android:id="@+id/guideline7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.05" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline9"
+            android:id="@+id/guideline8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.1" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline10"
+            android:id="@+id/guideline9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.3" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline11"
+            android:id="@+id/guideline10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.4" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline12"
+            android:id="@+id/guideline11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.5" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline13"
+            android:id="@+id/guideline12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.6" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline14"
+            android:id="@+id/guideline13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.7" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline15"
+            android:id="@+id/guideline14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.8" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
